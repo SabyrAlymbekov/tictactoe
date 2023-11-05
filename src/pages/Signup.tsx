@@ -14,8 +14,6 @@ function Signup() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
-      console.log(username);
-      
       const res = await createUserWithEmailAndPassword(auth, email, password);
       await updateProfile(res.user, {
         displayName: username,
