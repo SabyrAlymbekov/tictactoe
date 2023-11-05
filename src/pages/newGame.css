@@ -1,0 +1,25 @@
+.createGame {
+    position: relative;
+    margin: auto;
+    width: 10.5em;
+    height: 13em;
+    border: 0.3em solid black;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.createGame > img {
+    width: calc(10.5em - 0.6em);
+    height: calc(10.5em - 0.6em);
+    border-radius: 100px;
+}
+.createGame > input {
+    width: 100%;
+    border: none;
+    border-bottom: 0.3em solid black;
+    font-size: 1em;
+}
+.createGame > button {
+    background: none;
+    border: none;
+}

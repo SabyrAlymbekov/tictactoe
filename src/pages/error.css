@@ -1,0 +1,13 @@
+.oops {
+    color: rgb(229, 3, 3);
+    font-size: 6em;
+}
+.error-m {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.error-m > img {
+    width: 10em;
+}

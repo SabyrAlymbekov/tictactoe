@@ -1,0 +1,59 @@
+.chat {
+    width: 100%;
+    height: calc(100vh - 11.5em);
+    border: 0.3em solid black;
+    display: flex;
+    flex-direction: column;
+}
+.messages {
+    flex: 14;
+    overflow-y: scroll;
+    height: 70%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+    padding: 0.5em;
+}
+.type {
+    flex: 1;
+}
+.messType {
+    width: 75%;
+    height: 100%;
+}
+.messSend {
+    width: 25%;
+    height: 100%;
+}
+.mess {
+    display: flex;
+    height: auto;
+    column-gap: 0.5em;
+}
+.messAvatar {
+    width: 3em;
+    height: 3em;
+    border-radius: 100px;
+}
+.messName {
+    font-size: 1.2em;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.messText {
+    font-size: 0.8em;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.messInf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

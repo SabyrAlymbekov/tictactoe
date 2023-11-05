@@ -1,0 +1,133 @@
+.gamePanel {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+.gameTools {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4em;
+}
+.newGame {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.playButton {
+    text-align: center;
+    display: flex;
+    gap: 0.3em;
+    align-items: center;
+}
+.green {
+    color: rgb(0, 163, 0);
+    font-size: 1.5em;
+    vertical-align: middle;
+}
+.green2 {
+    color: rgb(0, 163, 0);
+    font-size: 1em;
+    vertical-align: middle;
+}
+.games {
+    display: flex;
+    flex-direction: column;
+}
+.headers {
+    display: flex;
+}
+.headers > div {
+    padding: .2em;
+    font-size: 1.3em;
+    border: 0.2em solid black;
+    border-bottom: none;
+}
+.check2 {
+    border-left: none !important;
+}
+.gamesSearching,
+.gamesPlaying {
+    display: none;
+}
+.headers input:checked + label {
+    font-weight: bold;
+    height: 2em;
+}
+.games:has(.gameRadio1:checked) .gamesSearching  {
+    display: flex;
+}
+.games:has(.gameRadio2:checked) .gamesPlaying  {
+    display: flex;
+}
+.headers input {
+    display: none;
+}
+.gameList {
+    flex-wrap: wrap;
+    padding: 1em;
+    border: 0.3em solid black;
+}
+.gameCard {
+    width: 7em;
+    height: 10em;
+    border: 0.3em solid black;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.gameCard img {
+    width: calc(7em - 0.6em);
+    height: calc(7em - 0.6em);
+    border-radius: 100px;
+}
+
+.gameCard h1 {
+    width: 100%;
+    text-align: center;
+    text-decoration: none !important;
+    color: black;
+    font-size: 1em;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    height: 100%;
+}
+.modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #00000036;
+    backdrop-filter: blur(2px);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.modalWindow {
+    width: 100vw;
+    max-width: 400px;
+    background: white;
+    padding-top: none;
+}
+.bar {
+    width: 100vw;
+    max-width: 400px;
+    background: #ecb100;
+    display: flex;
+    justify-content: right;
+}
+.bar > button {
+    margin: 0.5em 0.7em 0.5em 0;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1em;
+}
+.window-info {
+    padding: 1em;
+}

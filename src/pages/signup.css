@@ -1,0 +1,25 @@
+.signup {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1em;
+}
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5em;
+}
+.signup-form > input {
+    height: 2em;
+    padding-left: 0.3em;
+}
+.signup-button {
+    height: 2em;
+}
+.signup-text {
+    text-align: center;
+    font-size: 1.5em;
+}
+.signup a {
+    color: black;
+    text-decoration: none;
+}
