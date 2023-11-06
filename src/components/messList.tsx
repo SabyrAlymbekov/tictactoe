@@ -16,7 +16,7 @@ function MessageList({ chat }: props) {
           block: "end",
         });
       }
-    }, [chat.length]);;
+    }, [chat.length]);
     return <div className="messages">
         {chat.map((el) => {
             return <Message key={`${new Date().getTime()}${Math.random() * 100000}`} messageD={el} user={(userData != null) ? userData.uid : "none"}></Message>
