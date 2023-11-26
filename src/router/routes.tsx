@@ -14,7 +14,6 @@ const Room = lazy(() => import("../pages/room"));
 const Chat = lazy(() => import("../pages/chat"));
 const Trust = lazy(() => import("../pages/trust"));
 const Rules = lazy(() => import("../pages/rules"));
-const Rating = lazy(() => import("../pages/rating"));
 
 const router = createBrowserRouter([
   {
@@ -66,9 +65,6 @@ const router = createBrowserRouter([
       }, {
         path: "rules",
         element: <Suspense fallback={<Loading />}><Rules /></Suspense>,
-      }, {
-        path: "rating",
-        element: <Suspense fallback={<Loading />}><Rating /></Suspense>,
       }
     ]
   }

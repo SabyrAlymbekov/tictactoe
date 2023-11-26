@@ -1,5 +1,4 @@
 import { messageT } from "../pages/chat"
-import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 interface props {
     messageD: messageT,
@@ -11,8 +10,7 @@ function Message({ messageD, user } : props) {
     if (photoURL != "default")
           avatarURL = photoURL;
     return <div className={"mess " + ((from == user) ? "mine" : "")}>
-        {/* <img src={avatarURL} alt="avatar" className="messAvatar"/> */}
-        <LazyLoadImage src={avatarURL} alt="avatar" className="messAvatar" />
+        <img src={avatarURL} alt="avatar" className="messAvatar"/>
         <div className="messInf">
             <h1 className="messName">{username}</h1>
             <div className="messText">{message}</div>

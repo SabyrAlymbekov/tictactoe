@@ -22,9 +22,6 @@ function Layout() {
           <NavLink to="/buymeacoffe" className="menu-buttons">
             Поддержать
           </NavLink>
-          {/* <NavLink to="/rating" className="menu-buttons">
-            Рейтинг
-          </NavLink> */}
           <NavLink to="/chat" className="menu-buttons">
             Чат
           </NavLink>

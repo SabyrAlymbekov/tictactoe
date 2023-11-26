@@ -89,6 +89,11 @@ header h1 {
 .content {
     flex: 1;
 }
+.content:has(.loader) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 footer {
     display: flex;
